@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Dersleri</title>
+</head>
+<body>
+    <a id="geribtn" class="geribtn"  href="">Geri</a>
+    <div id="dynamicdiv" class="main">
+        <img src="logo.png" style="" alt="" srcset="">
+        <center><h1>HTML Dersleri</h1>
+            <div class="btncontent">
+                <a class="btn" href="#giris">Ders 1</a>
+                <a class="btn" href="#liste">Ders 2</a>
+                <a class="btn" href="#tablo">Ders 3</a>
+                <a class="btn" href="#form">Ders 4</a>
+                <a class="btn" href="#html5">Ders 5</a>
+            </div>
+        </center>
+        
+    </div>
+</body>
+<script>
+    var buton = document.getElementsByClassName("btn");
+    for (var i = 0; i < buton.length; i++) {
+        buton[i].addEventListener("click", function() {
+            var geri_btn = document.getElementById("geribtn");
+            geri_btn.style.display = "inline-block";
+        });
+    }
+
+    buton[0].addEventListener("click", function() {
+                $('#dynamicdiv').load("giris.html");
+    });
+    buton[1].addEventListener("click", function() {
+                $('#dynamicdiv').load("liste.html");
+    });
+    buton[2].addEventListener("click", function() {
+                $('#dynamicdiv').load("tablo.html");
+    });
+    buton[3].addEventListener("click", function() {
+                $('#dynamicdiv').load("form.html");
+    });
+    buton[4].addEventListener("click", function() {
+                $('#dynamicdiv').load("html5.html");
+    });
+
+
+    
+</script>
+</html>

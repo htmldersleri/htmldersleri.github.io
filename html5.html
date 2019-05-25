@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Yenilikleri</title>
+</head>
+<body>
+
+        <h1>HTML5 ile Gelen Yenilikler</h1>
+      <p>Merhaba arkadaşlar,</p>
+      <p>Bu dersimizle HTML5''e başlıyoruz. Öncelikle &lt;!DOCTYPE&gt; etiketinden söz etmek istiyorum.
+        .&lt;!DOCTYPE&gt; bir web sayfasını tarayıcıya tanıtır ve sayfanın  düzgün görüntülenmesini sağlar.
+        Kullanımı şart olmasa da, tarayıcının kodları daha sağlıklı yorumlamasını sağlayıp, hata riskini azaltır.
+        Bu etiketi sayfanın en başına yazarız ve kapatmayız. Her HTML sürümü için farklı bir  &lt;!DOCTYPE&gt; tanımı vardır.
+        Ben sadece HTML 1.0 ve HTML5'teki kullanımlarını göstereceğim. Amacım HTML5 ile gelen gelişimi göstermek...
+        Diğer sürümlere dair bilgileri Internet'te bulabilirsiniz.
+     </p>
+    
+        <p>- HTML 1.0 için:</p>
+      <pre>  &lt;!DOCTYPE HTML
+      PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "<a href="http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd</a>"&gt;
+      </pre>
+    
+      <p>-&nbsp;HTML5 için:<br>
+      </p><pre>&lt;!DOCTYPE HTML&gt;</pre>
+    
+      <p>Gördüğünüz gibi DOCTYPE etiketimiz, HTML5'te gayet sade bir hâl almış.
+      &lt;!DOCTYPE&gt; etiketiyle tarayıcıya "<i>Ben HTML5 kullanıyorum. Sayfayı ona göre yorumla.</i>" demiş oluyoruz.</p>
+    
+      <p>İlk dersimizde de  söylediğimiz gibi HTML5, HTML'in son sürümüdür; yani en güncel hâlidir.
+      HTML5 içinde biraz CSS ve Javascript barındırır ve diğer HTML sürümlerine göre daha esnektir.
+      Bu sürüme özgü bazı yeni kodlar gelirken, eskiden kullandığımız bazı kodlar da artık kullanılmayacaktır.
+      HTML5'te kullanılmayacak kodları sıralarsak: </p>
+      <pre>&lt;acronym&gt; , &lt;applet&gt;,  &lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;dir&gt;, &lt;font&gt;,
+    &lt;frame&gt; &lt;frameset&gt;, &lt;noframes&gt;,&nbsp; &lt;strike&gt;, &lt;tt&gt;, &lt;u&gt;,  &lt;xmp&gt;</pre>
+    <p>
+        Bu kodların artık kullanılmamasının sebebi olarak, CSS ile de bu kodlarla  yapılabileceklerin yapılması,
+     HTML’de bunlara duyulan ihtiyacın azalmasını söyleyebiliriz. HTML5  ile gelen yeni etiketler ise&nbsp;
+     açıklamalarıyla beraber şöyle sıralayabiliriz:</p>
+    
+    <pre><strong>&lt;canvas&gt;:</strong> Sayfada bir tuval alanı oluşturur. Tuvale çizim javascript  ile yapılabilir.
+    <strong>&lt;audio&gt;:</strong> Sayfaya ses oynatıcı bir modül ekler.
+    <strong>&lt;video&gt;:</strong> Video oynatıcı bir modül  ekler.
+    <strong>&lt;progress&gt;:</strong> İşlem süreci göstergesi ekler.
+    <strong>&lt;caption&gt;:</strong> Başlık olarak düşünülen metinleri düzenler.
+    <strong>&lt;header&gt;:</strong> Sitenin başlık  ve açıklama içeriğini alır.
+    <strong>&lt;nav&gt;:</strong> Menüleri ve bir takım zaruri işlevleri içine alır.
+    <strong>&lt;footer&gt;:</strong> Sitelerin en alt  kısmını içine alır.
+    <strong>&lt;article&gt;:</strong> Makale, deneme tarzı yazıları kapsar.
+    <strong>&lt;aside&gt;:</strong> Ana içerikte ayrı yazılan kısımdır.
+    <strong>&lt;datalist&gt;:</strong> Düzenlenebilir elementlere otomatik tamamlama özelliği  verilmesini sağlar.
+    <strong>&lt;details&gt;:</strong> Detay bilgisi  içerir.
+    <strong>&lt;embed&gt;:</strong> Dışarıdan eklenen componentler için kullanılır. (Örn&nbsp;: .swf uzantılı dosyalar)
+    <strong>&lt;figcaption&gt;:</strong> &lt;figure&gt;&nbsp;elementinin başlığını belirler.
+    <strong>&lt;figure&gt;:</strong> Çeşitli medya içeriği gruplarını belirler.
+    <strong>&lt;hgroup&gt;:</strong> Başlık grubunu belirtir. H1, H2 gibi başlık elementleri burada tanımlanabilir.
+    <strong>&lt;mark&gt;:</strong> Yazı içerisinde özellikle üstünde durulan kelimeleri  belirler.
+    <strong>&lt;summary&gt;:</strong> Yazının başlığını belirler.
+    <strong>&lt;time&gt;:</strong> Tarih, saat verilerini kapsar.
+    </pre>
+    
+    <p>Bunların dışında &lt;command&gt;,&lt;meter&gt;,&lt;output&gt;,&lt;rp&gt;,&lt;source&gt;,&lt;ruby&gt;,&lt;section&gt;,
+      &lt;rt&gt; ve &lt;keygen&gt; de HTML5 ile gelen yeni etiketler arasındadır. Şimdi ilk olarak &lt;canvas&gt; etiketiyle
+      bir örnek yapalım.</p>
+    
+    <pre>&lt;!DOCTYPE HTML&gt;
+     &lt;html&gt;
+      &lt;body&gt;
+       &lt;canvas width="200" height="100"style="border:1px solid black;"&gt;
+        &lt;script type=”text/javascript”&gt;
+         ...
+        &lt;/script&gt;
+       &lt;/canvas&gt;
+      &lt;/body&gt;
+     &lt;/html&gt;
+    </pre>
+    
+    <p>Tarayıcıdaki görüntüsü sayfanın sol üstünde siyah kenarlıklı içi boş bir tablodur.
+      İçi javascriptle çizim yapılması için ayrılan alandır. Javascript’e şimdi girmiyorum.
+      Ancak yazdığım kodları  açıklayayım. Width ve height ile oluşturduğumuz alanın enini ve boyunu pixel cinsinden belirlemiş olduk.
+      Style, kenarlık özelliklerini belirlemek için  açıldı.&nbsp;”border:1px “ ifadesi kenarlık  kalınlığını belirler.
+      Solid kenarlığın düz çizgi olmasını sağladı. Solid yerine  dashed i kullansaydık kenarlık kesik çizgi halinde olacaktı.
+      Son olarak black  ise kenarlık rengi. Onu da red yellow şeklinde değiştirmek mümkün veya #000000  şeklinde renk kodunu yazabiliriz.</p>
+    <p>Şimdi  de sırasıyla &lt;audio&gt; ve &lt;video&gt; etiketlerinden bahsedelim.</p>
+    
+    <pre>&lt;!DOCTYPE HTML&gt;
+     &lt;html&gt;
+      &lt;body&gt;
+       &lt;audio src="ses.mp3" controls="controls" autoplay="autoplay" loop="loop"&gt;
+        Tarayıcınız desteklemediği için ses dosyası çalınamıyor.
+       &lt;/audio&gt;
+      &lt;/body&gt;
+     &lt;/html&gt;</pre>
+    
+      <p>Audio nun yanında kullandığımız&nbsp;dört ifadenin anlamlarını açıklayalım: <br><br>
+        <strong>src="ses.mp3"</strong> ses dosyasının yerini belirler. Hatırlarsanız resim dosyalarında da aynı şeyi yapmıştık. Benim ses dosyam aynı klasörde yer aldığı için sadece adını yazdım. <br>
+        <strong>controls="controls" </strong>&nbsp;eğer bunu yazmasaydık play tuşu gibi kontrol tuşları görünmeyecekti. <br>
+        <strong>autoplay="autoplay" </strong>bu ifade sayesinde sayfa yüklendiği  gibi ses dosyası yürütülmeye başlanır. Eğer kullanmazsak ses dosyasının çalması için 'play' tuşuna basılması gerekir.<br>
+        <strong>loop="loop" </strong> Kullandığımız takdirde ses doyası biter bitmez baştan başlayacaktır.</p>
+    
+    <p>Bu arada şunu da belirtelim ki &lt;audio&gt; elementinin desteklediği 3 tür ses uzantısı (.mp3 .ogg ve .wav) vardır.
+    Tarayıcı ses dosyasını desteklemiyorsa ekranda bizim yazmış olduğumuz uyarı gözükür. Destekler ise uyarı yazısı görünmez.</p>
+    <p></p>
+    <p>Artık bir video dosyası ekleyebiliriz:<br>
+    
+    </p><pre>&lt;!DOCTYPE HTML&gt;
+     &lt;html&gt;
+      &lt;body&gt;
+       &lt;video src="video.ogg" width="250" height="200" controls="controls" loop="loop"&gt;
+        Tarayıcınız desteklemediği için video açılmamaktadır.
+       &lt;/video&gt;
+      &lt;/body&gt;
+     &lt;/html&gt;
+    </pre>
+    
+      <p>Ses doyası eklerken kullandıklarımızın aynısını kullandık.
+      Farklı olarak bu sefer etiketimiz &lt;video&gt; idi ve  boyutunu belirten height="..."
+      ve width="..." ifadelerine yer verdik. Bu boyutlar da pixel cinsindendir. </p>
+    <p>Bu dersimizde HTML5&nbsp;hakkında bilgi sahibi olduk ve HTML5 etiketlerinin üçüyle örnekler yaptık.
+    Diğer dersimizde görüşmek üzere...</p>
+
+    
+    
+    
+    </body>
+</html>

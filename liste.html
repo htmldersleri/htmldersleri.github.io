@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liste</title>
+</head>
+<body>
+        
+        
+    <h1>HTML'de Liste Oluşturma</h1>
+    <p>Merhaba arkadaşlar,</p> 
+    <p>Sıra geldi liste ve tablo oluşturmaya... İlk olarak listelerden bahsedelim. HTML'de sıralı liste, 
+    sırasız liste ve tanım listesi olmak üzere üç tip liste oluşturma şekli vardır. Her birinin kullanımını 
+    ayrı ayrı inceleyeceğiz.
+     </p>
+     
+    <p><b>Sıralı Liste</b></p>
+    <pre>&lt;html&gt;
+      &lt;body&gt;
+       &lt;ol&gt;
+        &lt;li&gt;Çay&lt;/li&gt;
+        &lt;li&gt;Kahve&lt;/li&gt;
+        &lt;li&gt;Süt&lt;/li&gt;
+        &lt;li&gt;Su&lt;/li&gt;
+       &lt;/ol&gt;
+     &lt;body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+    <p><b>Sırasız Liste</b></p>
+     <pre>&lt;html&gt;
+      &lt;body&gt;
+       &lt;ul&gt;
+        &lt;li&gt;Çay&lt;/li&gt;
+        &lt;li&gt;Kahve&lt;/li&gt;
+        &lt;li&gt;Süt&lt;/li&gt;
+        &lt;li&gt;Su&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+    <p>
+    Sıralı Listede &lt;ol&gt; etiketi ile  listeyi belirtiyoruz. 
+    Her bir maddeyi &lt;li&gt;...&lt;/li&gt; etiketleri arasına yazıyoruz. 
+    Tarayıcıda aşağıdaki gibi gözüküyor:</p>
+       <ol style="margin-left:30pt;">
+         <li>Çay</li>
+         <li>Kahve</li>
+         <li>Süt</li>
+         <li>Su</li>
+       </ol>
+    
+    <p>Sırasız listenin farkı ise &lt;ol&gt;  yerine &lt;ul&gt; etiketini kullanmamız. 
+    Tarayıcıda karşımıza çıkan sonuç şöyle oluyor: </p>
+        <ul style="margin-left:30pt;">
+       <li>Çay</li>
+       <li>Kahve</li>
+       <li>Süt </li>
+       <li>Su</li>
+     </ul>
+     
+    <p>Sıralı listede maddeleri 1 2 3 diye sıralayabileceğimiz gibi; a b c; A B  C; I II III; i ii iii gibi
+    İster harflerle ister roma rakamlarıyla da sıralayabiliriz. Örneklerle görelim.</p>
+    
+      <pre>&lt;html&gt;
+      &lt;body&gt;
+      
+      &lt;h3&gt;Numaralı Liste&lt;/h3&gt;
+      &lt;ol&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ol&gt;
+    
+      &lt;h3&gt;Büyük Harfli Liste&lt;/h3&gt;
+      &lt;ol type="A"&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ol&gt;
+    
+      &lt;h3&gt;Küçük Harfli liste&lt;/h3&gt;
+      &lt;ol type="a"&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ol&gt;
+      
+      &lt;h3&gt;Roma Rakamlı Liste&lt;/h3&gt;
+      &lt;ol type="I"&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ol&gt;
+      
+      &lt;h3&gt;Küçük Roma Rakamlı Liste&lt;/h3&gt;
+      &lt;ol type="i"&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ol&gt;
+      
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+     <p>Sonuçlar şu şekilde olacaktır:</p>
+     <p><strong>Numaralı Liste</strong></p>
+    <ol style="margin-left:30pt;">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ol>
+    <p><strong>Büyük Harfli Liste</strong></p>
+    <ol style="margin-left:30pt;" type="A">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ol>
+    <p><strong>Küçük Harfli liste</strong></p>
+    <ol style="margin-left:30pt;" type="a">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ol>
+    <p><strong>Roma Rakamlı Liste</strong></p>
+    <ol style="margin-left:30pt;" type="I">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ol>
+    <p><strong>Küçük Roma Rakamlı Liste</strong></p>
+    <ol style="margin-left:30pt;" type="i">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ol>
+    
+    <p>Sıralı liste oluştururken kullanabileceğimiz seçenekler bunlar... Sırasız listeleri görelim.</p>
+        
+    <pre>&lt;html&gt;
+      &lt;body&gt;
+      
+      &lt;h3&gt;Disk Liste&lt;/h3&gt;
+      &lt;ul type="Disk"&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Daire Liste&lt;/h3&gt;
+      &lt;ul type="circle"&gt;
+      &lt;li&gt;Çay&lt;/li&gt;
+      &lt;li&gt;Kahve&lt;/li&gt;
+      &lt;li&gt;Süt&lt;/li&gt;
+      &lt;li&gt;Su&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Kare Liste&lt;/h3&gt; 
+      &lt;ul type="square"&gt;  
+      &lt;li&gt;Çay&lt;/li&gt; 
+      &lt;li&gt;Kahve&lt;/li&gt; &lt;li&gt;Süt&lt;/li&gt;  
+      &lt;li&gt;Su&lt;/li&gt;  
+      &lt;/ul&gt; 
+    
+      &lt;body&gt;
+    &lt;/html&gt;	
+    </pre>
+    
+    <p>Sonuçlar şu şekilde olacaktır.</p>
+     <p><strong>Disk Liste</strong></p>
+    <ul style="margin-left:30pt;" type="disc">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ul>
+    <p><strong>Daire Liste</strong></p>
+    <ul style="margin-left:30pt;" type="circle">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ul>
+    <p><strong>Kare Liste</strong></p>
+    <ul style="margin-left:30pt;" type="square">
+      <li>Çay</li>
+      <li>Kahve</li>
+      <li>Süt</li>
+      <li>Su</li>
+    </ul>
+    
+    <p>Sıralı ve sırasız listeler hakkında  söyleyebileceklerimiz bu kadar. Sırada tanım listeleri var. 
+    Tanım  listelerinde kullanacağımız etiketler farklıdır. &lt;dd&gt; &lt;dl&gt;  &lt;dt&gt; etiketlerini kullanırız. 
+    Bir örnekle başlayıp, devamında açıklamasını yapalım.</p>
+    
+    <pre>&lt;html&gt;
+      &lt;body&gt;
+    
+      &lt;dl&gt;
+      &lt;dt&gt;Sıcak İçecekler&lt;/dt&gt;
+      &lt;dd&gt;Çay&lt;/dd&gt;
+      &lt;dd&gt;Kahve&lt;/dd&gt;
+      &lt;dt&gt;Soğuk İçecekler&lt;/dt&gt;
+      &lt;dd&gt;Su&lt;/dd&gt;
+      &lt;dd&gt;Süt&lt;/dd&gt;
+      &lt;/dl&gt;
+      
+      &lt;body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+    <p>Alacağımız sonuç aşağıdaki gibi olacaktır:</p>
+    <dl style="margin-left:30pt;">
+      <dt>Sıcak İçecekler</dt>
+      <dd>Çay</dd>
+      <dd>Kahve</dd>
+      <dt>Soğuk İçecekler</dt>
+      <dd>Su</dd>
+      <dd>Süt</dd>
+    </dl>
+      
+      
+    <p>&lt;dl&gt; listeyi belirtir. Yani &lt;ol&gt; veya &lt;ul&gt; ile aynı işi yapar diyebiliriz. 
+    &lt;dt&gt; ise başlık belirtme görevindedir. Sıcak içecekler, Soğuk içecekler, Şekerli içecekler, Yemekler... şeklinde 
+    başlıklar oluşturabiliriz. &lt;dl&gt; ise &lt;li&gt; ile eşdeğerdir yani  maddeleri &lt;dl&gt;..&lt;/dl&gt; arasına yazarız.
+    </p>
+    
+    <p> 
+     Öğrendiklerimizle biraz pratik yapalım ve iç içe bir liste oluşturalım. 
+     Kodları incelemeniz yeterli olacağından, tekrar açıklama yapmıyorum.
+    </p> 
+      
+      <pre>&lt;html&gt;
+      &lt;body&gt;
+      &lt;h3&gt;Ülkere Göre En İyi 3 Futbol Takımı&lt;/h3&gt;
+      
+      &lt;ul&gt;
+       &lt;li&gt;Türkiye&lt;/li&gt;
+        &lt;ol type="a"&gt;
+         &lt;li&gt;Beşiktaş&lt;/li&gt;
+         &lt;li&gt;Galatasaray&lt;/li&gt;
+         &lt;li&gt;Fenerbahçe&lt;/li&gt;
+        &lt;/ol&gt;
+      
+       &lt;li&gt;İngiltere&lt;/li&gt;
+        &lt;ol type="a"&gt;
+         &lt;li&gt;Chelsea&lt;/li&gt;
+         &lt;li&gt;Liverpool&lt;/li&gt;
+         &lt;li&gt;Man. United&lt;/li&gt;
+        &lt;/ol&gt;
+      
+       &lt;li&gt;İspanya&lt;/li&gt;
+        &lt;ol type="a"&gt;
+         &lt;li&gt;Real Madrid&lt;/li&gt;
+         &lt;li&gt;Barcelona&lt;/li&gt;
+         &lt;li&gt;Atletico Madrid&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/ul&gt;
+    
+      &lt;body&gt;
+    &lt;/html&gt;</pre>
+    
+    <p>Evet yanlış anlamadınız Beşiktaşlıyım ve Messi değil Ronaldo  diyorum :))</p>
+     <p>Sonraki dersimize tablo oluşturmayı bırakıp, yazımızı burada noktalayalım.</p>
+
+
+    
+    </body>
+</html>

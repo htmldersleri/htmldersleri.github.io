@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+
+        <h1>HTML Form Elemanları</h1>
+    
+     <p>
+         Bu yazıda HTML form elemanlarını öğreneceğiz. Nedir bunlar ne işe yarar önce bunlardan bahsedelim...
+         Form elemanlarını, kullanıcı bilgi girişinde kullanır. Form elemanları kullanıcı adı, şifre girişi gibi alanlar 
+         oluşturmamızı sağlar. Aynı zamanda onay kutuları oluştururken de kullanırız. 
+         Mesela kullanıcıdan evli veya bekar olduğu, evi arabası olup olmadığı bilgilerini alırken form elemanlarıyla 
+         oluşturacağımız onay kutularından yararlanırız.
+        </p><p>
+     </p><p>
+             Form  elemanları &lt;form&gt;..&lt;/form&gt; etiketleri arasına yazılır. input en çok  kullanacağımız form etiketidir. 
+             Kapatılmaz. input etiketi içerisinde kullanılan type ifadesiyle girdi türü belirlenir. Bir örnek yapacak olursak:
+         </p>
+    <pre>&lt;html&gt;
+     &lt;body&gt;
+      &lt;form&gt;
+       Ad: &lt;input type="text"  name="name"&gt;&lt;br/&gt;
+       Soyad: &lt;input  type="text" name="lastname"&gt;
+      &lt;/form&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+        
+        <p>Yukarıda yaptığımız örnek tarayıcıda aşağıdaki gibi gözükecektir: </p> 
+    <p>	
+        Ad:&nbsp;
+      <input type="text" name="firstname">
+      <br>
+      Soyad:&nbsp;
+      <input type="text" name="lastname">
+      <br>
+    </p>
+     
+      <p>type="..."&nbsp;ve name="..." ifaderi dinamik web sayfası oluştururken daha iyi anlaşılacaktır. 
+      Henüz detaya girmeyelim. Ancak şunu bilmekte yarar var: text, name ve lastname yerine Türkçe karakter içermeyen 
+      Türkçe ifadeler de kullanabiliriz. (Yani name="kullaniciadi" şeklinde bir ifade de geçerli olurdu.)
+      Şimdi örneğimizi biraz daha geliştirelim. Bir gönderme butonu oluşturalım ve ad soyad  kutucuklarına sayfa 
+      açıldığında görüntülenecek yazılar ekleyelim.</p>
+      
+    <pre>&lt;html&gt;
+     &lt;body&gt;
+      &lt;form&gt;
+        Ad: &lt;input type="text" name="firstname" value="adınızı  giriniz"&gt;&lt;br/&gt;
+        Soyad: &lt;input type="text" name="lastname"  value="soyadınızı giriniz"&gt;&lt;br/&gt;
+        &lt;input type="submit" value="Gönder"&gt;
+      &lt;/form&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+    <p>Sayfada göreceğimiz yapı aşağıdaki gibi olacaktır:</p>
+    <p>  
+      Ad:&nbsp;
+      <input type="text" name="firstname" value="adınızı giriniz">
+      <br>
+      Soyad:&nbsp;
+      <input type="text" name="lastname" value="soyadınızı giriniz">
+      <br>
+      <input type="submit" value="Gönder">
+    </p>
+      
+      <p>Submit ifadesiyle buton oluşturduk. Value ise butonun ve kutucukların içindeki ifadeleri yazmamızda kullanıldı.
+      Onay kutuları oluşturmamızda da işe yarayacağından bahsetmiştik. Bununla ilgili ilk örneğimizi de yapalım.</p>
+      
+    <pre>&lt;html&gt;
+     &lt;body&gt;
+      &lt;form&gt;
+       &lt;input type="radio" name="cinsiyet" value="bayan"&gt;Bayan&lt;br/&gt;
+       &lt;input type="radio" name="cinsiyet" value="erkek"&gt;Erkek&lt;br/&gt;
+       &lt;input type="submit" value="Kaydet"&gt;
+      &lt;/form&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+      
+    <p>
+                </p><form>
+                    <input type="radio" name="cinsiyet" value="bayan">Bayan<br>
+                    <input type="radio" name="cinsiyet" value="erkek">Erkek<br>
+                    <input type="submit" value="Kaydet">
+                 </form>
+    <p></p>
+    <p> 
+        Üstteki örnekte görülen "<i>radio</i>" ifadesi tek seçeneği seçmemizi sağlar. Birden fazla seçenek seçmemizi gerektiren 
+        durumlar da ise	checkbox ifadesini kullanırız.
+    </p>
+    
+    <pre>&lt;html&gt;
+     &lt;body&gt;
+      &lt;h5&gt;Hangi Tür Müzikleri Seversiniz&lt;/h5&gt;
+       &lt;form&gt;
+        &lt;input type="checkbox" name="music" &gt;Pop&lt;br/&gt;
+        &lt;input type="checkbox" name="music" &gt;Rock&lt;br/&gt;
+        &lt;input type="checkbox" name="music" &gt;Arabesk&lt;br/&gt;
+        &lt;input type="checkbox" name="music" &gt;Türk Sanat Müziği&lt;br/&gt;
+        &lt;input type="submit" value="Kaydet"&gt;
+       &lt;/form&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    <p>Yazılan kodun sonucunda, birden çok seçimi yapabiliyoruz:</p>
+    <p>  
+      </p><form>
+                    <input type="checkbox" name="music">Pop<br>
+                    <input type="checkbox" name="music">Rock<br>
+                    <input type="checkbox" name="music">Arabesk<br>
+                    <input type="checkbox" name="music">Türk Sanat Müziği<br>
+                    <input type="submit" value="Kaydet">
+     </form>
+    <p></p>
+    
+    <p>Son olarak açılır liste oluşturmayı da görelim:</p>
+    
+    <pre>&lt;html&gt;
+     &lt;body&gt;
+      &lt;h5&gt;İlk  öğrendiğiniz programlama dilini seçiniz&lt;/h5&gt;
+       &lt;form&gt;
+        &lt;select name="proglamlama dilleri" &gt;
+         &lt;option value="C"&gt;C&lt;br/&gt;
+         &lt;option value="C++"&gt;C++&lt;br/&gt;
+         &lt;option value="Pascal"&gt;Pascal&lt;br/&gt;
+         &lt;option value="Java"&gt;Java&lt;br/&gt;
+        &lt;/select&gt;
+      &lt;/form&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+    <p>  
+      </p><h5>İlk  öğrendiğiniz programlama dilini seçiniz</h5>
+      <form>
+      <select name="proglamlama dilleri">
+      <option value="C">C
+      </option><option value="C++">C++
+      </option><option value="Pascal">Pascal
+      </option><option value="Java">Java
+      </option></select>
+      </form>
+    <p></p> 
+     
+    <p>
+          Form elemanları kullanıcıdan bilgi almak için kullanılır demiştik. Bu derste veri almanın, görsel kısımlarını gördük. 
+      Ancak alınan verinin işlenmesi için PHP, JSP veya ASP.NET gibi web programlama dillerini bilmek gerekir. 
+      Şayet verinin işlenmesi dışında, saklanması da gerekiyorsa, genellikle ilişkisel bir veritabanı (RDBMS) kullanılır. 
+         Bu konular farklı uzmanlıklar gerektiriyor. Konu fazlalılığı gözünüzü korkutmasın; aradaki noktaları zamanla 
+         birleştireceksiniz.     
+    </p>
+
+    
+    
+    
+    </body>
+</html>

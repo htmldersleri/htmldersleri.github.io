@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablo</title>
+</head>
+<body>
+        <br>
+        <h1>HTML Tablo Oluşturma</h1>
+    <p>Tablo oluştururken kullanacağımız temel etiketler  &lt;table&gt; &lt;tr&gt; ve &lt;td&gt; dir. &lt;table&gt; tabloyu belirtir.  
+    &lt;tr&gt; satırları, &lt;td&gt; ise sütunları belirtir. Önce basit bir örnek  yapalım.</p>
+    <pre>&lt;html&gt;
+      &lt;body&gt;
+       &lt;table&gt;
+        &lt;tr&gt;
+         &lt;td&gt;Satır1, Sütun1&lt;/td&gt;
+         &lt;td&gt;Satır1, Sütun2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td&gt;Satır2, Sütun1&lt;/td&gt;
+         &lt;td&gt;Satır2, Sütun2&lt;/td&gt;
+        &lt;/tr&gt;
+       &lt;/table&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+      
+    <p>Bu şekilde 2x2'lik bir tablo oluşturabiliriz. Ancak tablonun  kenarları görünmeyebilir. 
+    Kenarlık kalınlığını ayarlamak için border ifadesini  kullanırız. Kullanımı &lt;table border="1"&gt; şeklindedir. 
+    &lt;th&gt;  etiketinden de bahsedelim. 
+    &lt;th&gt; tablo başlığıdır diyebiliriz. İfadeyi  kalın ve bölmenin ortasında gösterir. Bir örnek daha yapalım.</p>
+        
+      <pre>&lt;html&gt;
+      &lt;body&gt;
+       &lt;table border="2"&gt;
+        &lt;tr&gt;
+         &lt;th&gt;Mavi&lt;/th&gt;
+         &lt;th&gt;Beyaz&lt;/th&gt;
+        &lt;tr&gt;
+         &lt;td&gt;Deniz&lt;/td&gt;
+         &lt;td&gt;Bulut&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td&gt;Gökyüzü&lt;/td&gt;
+         &lt;td&gt;Duman&lt;/td&gt;
+        &lt;/tr&gt;
+       &lt;/table&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+      
+    <p>Yazdığımız kodun çıktısı aşağıdaki gibi olacaktır:</p>
+    <table style="margin-left:30pt;" cellpadding="0" border="1">
+      <tbody><tr>
+        <td>
+          <strong>Mavi</strong></td>
+        <td><strong>Beyaz</strong></td>
+      </tr>
+      <tr>
+        <td>Deniz</td>
+        <td>Bulut</td>
+      </tr>
+      <tr>
+        <td>Gökyüzü</td>
+        <td>Duman</td>
+      </tr>
+    </tbody></table>
+    <br>
+    <p>
+      Satır veya sütunları birleştirebiliriz. rowspan="..."  satırlar, colspan="..." sütunlar için kullanılır. 
+      Araya da birleştirilecek satır  veya sütun sayısını yazarız.  
+      Ayrıca bgcolor="..." ifadesini kullanarak tabloların arkaplan rengini de değiştirebiliriz. Örnekle görelim:</p>
+      <pre>&lt;html&gt;
+      &lt;body&gt;
+       &lt;table border="2" bgcolor="aqua"&gt;
+        &lt;tr&gt;
+         &lt;td colspan="3"&gt;0&lt;/td&gt;
+         &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td&gt;4&lt;/td&gt;
+         &lt;td&gt;5&lt;/td&gt;
+         &lt;td rowspan="2"&gt;6&lt;/td&gt;
+         &lt;td&gt;7&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td&gt;8&lt;/td&gt;
+         &lt;td&gt;9&lt;/td&gt;
+         &lt;td&gt;10&lt;/td&gt;
+        &lt;/tr&gt;
+       &lt;/table&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+      
+     <p>Tablolarla ilgili son olarak cellspacing ve cellpadding ifadelerinden bahsedelim. 
+     cellspacing hücreler arası, cellpadding hücre içi genişliği  belirtir. 
+     Kullanımlarından gösterecek olursak:</p>
+     <pre>&lt;html&gt;
+     &lt;body&gt;
+    &nbsp;&nbsp; &lt;table border="2" cellspacing="100" cellpadding="100"&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;A&lt;/td&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;B&lt;/td&gt;
+    &nbsp;&nbsp;&nbsp; &lt;/tr&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+    &nbsp;&nbsp;&nbsp;  &lt;td&gt;C&lt;/td&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;D&lt;/td&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+    &nbsp;&nbsp; &lt;/table&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+     <p>Evet arkadaşlar tablolar hakkında söyleyeceklerimiz şimdilik bu kadar. HTML'de önemli bir yol katetmiş durumdayız.
+     Diğer derste görüşmek dileğiyle kendinize iyi bakın.</p>
+     
+
+    
+    
+    
+    </body>
+</html>
